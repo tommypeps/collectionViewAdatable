@@ -18,6 +18,14 @@ protocol CollectionViewCellDelegate {
 
 class CellCollecitonView: UICollectionViewCell {
     
+    static func getCellCollecitonView() -> CellCollecitonView {
+        guard let cellCollecitonView = UIView.loadFromNibNamed(nibNamed: "CellCollecitonView") as? CellCollecitonView else {
+            fatalError()
+        }
+        return cellCollecitonView
+    }
+    
+    
     var cellUI: CellUI?
     
     var collectionViewCellDelegate: CollectionViewCellDelegate?
@@ -35,7 +43,7 @@ class CellCollecitonView: UICollectionViewCell {
         super.awakeFromNib()
         self.contentView.translatesAutoresizingMaskIntoConstraints = false
         let screenWitdh = UIScreen.main.bounds.size.width
-        CellCollectionViewWidth.constant = screenWitdh - (2 * 12)
+        CellCollectionViewWidth.constant = screenWitdh
     }
     
     override func prepareForReuse() {
@@ -44,6 +52,10 @@ class CellCollecitonView: UICollectionViewCell {
         titleLabel.text = ""
         bodyLabel.text = ""
         menuTableView.dataSource = nil
+        
+        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        let screenWitdh = UIScreen.main.bounds.size.width
+        CellCollectionViewWidth.constant = screenWitdh
     }
     
     func configureCell() {

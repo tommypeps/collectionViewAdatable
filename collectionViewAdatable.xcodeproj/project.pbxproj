@@ -10,12 +10,12 @@
 		1064E5E02053351C00EE96A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064E5DF2053351C00EE96A5 /* AppDelegate.swift */; };
 		1064E5E22053351C00EE96A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064E5E12053351C00EE96A5 /* ViewController.swift */; };
 		1064E5E52053351C00EE96A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1064E5E32053351C00EE96A5 /* Main.storyboard */; };
-		1064E5E72053351C00EE96A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1064E5E62053351C00EE96A5 /* Assets.xcassets */; };
 		1064E5EA2053351C00EE96A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1064E5E82053351C00EE96A5 /* LaunchScreen.storyboard */; };
 		1064E5F22053353C00EE96A5 /* CellUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064E5F12053353C00EE96A5 /* CellUI.swift */; };
 		1064E5F6205336B800EE96A5 /* CellCollecitonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1064E5F5205336B800EE96A5 /* CellCollecitonView.swift */; };
 		1064E5F82053371B00EE96A5 /* CellCollecitonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1064E5F72053371B00EE96A5 /* CellCollecitonView.xib */; };
 		10F6940A2055864C00E563F8 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F694092055864C00E563F8 /* CollectionViewDataSource.swift */; };
+		66EE6823219A15770037387B /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EE6822219A15770037387B /* UIView+Nib.swift */; };
 		66FED9BAC058A37DDF666228 /* Pods_collectionViewAdatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BD26B386B88B4133A191C3 /* Pods_collectionViewAdatable.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +24,13 @@
 		1064E5DF2053351C00EE96A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1064E5E12053351C00EE96A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1064E5E42053351C00EE96A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1064E5E62053351C00EE96A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1064E5E92053351C00EE96A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1064E5EB2053351C00EE96A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1064E5F12053353C00EE96A5 /* CellUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellUI.swift; path = ../Model/CellUI.swift; sourceTree = "<group>"; };
 		1064E5F5205336B800EE96A5 /* CellCollecitonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellCollecitonView.swift; path = View/CellCollecitonView.swift; sourceTree = SOURCE_ROOT; };
 		1064E5F72053371B00EE96A5 /* CellCollecitonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellCollecitonView.xib; path = View/CellCollecitonView.xib; sourceTree = SOURCE_ROOT; };
 		10F694092055864C00E563F8 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewDataSource.swift; path = DataSource/CollectionViewDataSource.swift; sourceTree = SOURCE_ROOT; };
+		66EE6822219A15770037387B /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
 		A692A52163616BA7F482597D /* Pods-collectionViewAdatable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewAdatable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-collectionViewAdatable/Pods-collectionViewAdatable.debug.xcconfig"; sourceTree = "<group>"; };
 		C4DC0A7FDBA6B2EB3D8B091B /* Pods-collectionViewAdatable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-collectionViewAdatable.release.xcconfig"; path = "Pods/Target Support Files/Pods-collectionViewAdatable/Pods-collectionViewAdatable.release.xcconfig"; sourceTree = "<group>"; };
 		F6BD26B386B88B4133A191C3 /* Pods_collectionViewAdatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_collectionViewAdatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,13 +69,13 @@
 		1064E5DE2053351C00EE96A5 /* collectionViewAdatable */ = {
 			isa = PBXGroup;
 			children = (
+				66EE6821219A15600037387B /* Common */,
 				1064E5DF2053351C00EE96A5 /* AppDelegate.swift */,
 				10F694082055861900E563F8 /* DataSource */,
 				1064E5F42053367000EE96A5 /* View */,
 				1064E5F32053354400EE96A5 /* Model */,
 				1064E5E12053351C00EE96A5 /* ViewController.swift */,
 				1064E5E32053351C00EE96A5 /* Main.storyboard */,
-				1064E5E62053351C00EE96A5 /* Assets.xcassets */,
 				1064E5E82053351C00EE96A5 /* LaunchScreen.storyboard */,
 				1064E5EB2053351C00EE96A5 /* Info.plist */,
 			);
@@ -107,6 +107,14 @@
 			name = DataSource;
 			sourceTree = "<group>";
 		};
+		66EE6821219A15600037387B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				66EE6822219A15770037387B /* UIView+Nib.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		7B9ABD3A18D7B54DB1DA5684 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +144,6 @@
 				1064E5D92053351C00EE96A5 /* Frameworks */,
 				1064E5DA2053351C00EE96A5 /* Resources */,
 				2586609B31469E11315CFEEB /* [CP] Embed Pods Frameworks */,
-				ABAB483376F6240DDDF0C721 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,7 +195,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1064E5EA2053351C00EE96A5 /* LaunchScreen.storyboard in Resources */,
-				1064E5E72053351C00EE96A5 /* Assets.xcassets in Resources */,
 				1064E5F82053371B00EE96A5 /* CellCollecitonView.xib in Resources */,
 				1064E5E52053351C00EE96A5 /* Main.storyboard in Resources */,
 			);
@@ -233,21 +239,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABAB483376F6240DDDF0C721 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-collectionViewAdatable/Pods-collectionViewAdatable-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,6 +248,7 @@
 			files = (
 				10F6940A2055864C00E563F8 /* CollectionViewDataSource.swift in Sources */,
 				1064E5F22053353C00EE96A5 /* CellUI.swift in Sources */,
+				66EE6823219A15770037387B /* UIView+Nib.swift in Sources */,
 				1064E5E22053351C00EE96A5 /* ViewController.swift in Sources */,
 				1064E5F6205336B800EE96A5 /* CellCollecitonView.swift in Sources */,
 				1064E5E02053351C00EE96A5 /* AppDelegate.swift in Sources */,
